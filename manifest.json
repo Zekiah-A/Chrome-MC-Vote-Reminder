@@ -1,0 +1,24 @@
+{
+  "name": "ScpeVoteExtension",
+  "version": "1.0",
+  "description": "This bot wil remind you to vote for scpe (or force you :)).",
+  "permissions": ["activeTab", "declarativeContent", "storage", "alarms", "notifications"],
+  "options_page": "options.html",
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "icons": {
+    "16": "images/scpe_16.png",
+    "32": "images/scpe_32.png",
+    "48": "images/scpe_48.png",
+    "128": "images/scpe_128.png"
+  },
+    "browser_action": {
+   "default_popup": "popup.html"
+  },
+  
+  "manifest_version": 2
+}
