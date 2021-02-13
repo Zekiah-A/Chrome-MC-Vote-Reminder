@@ -9,16 +9,3 @@ document.addEventListener('DOMContentLoaded', function() {
 		chrome.tabs.create({ url: voteURL });
 	});
 });
-
-
-/*
-function callback(){
-	var callbackDate = new Date(); 
-	console.log("Notification fr  vote reminder sent at:", callbackDate);
-}
-*/
-//What to do if up to date -> funny dancing gif /DONE
-//, next vote in []
-
-//hahafunny.gif
-// <img src="images/" width="100" height="100">
