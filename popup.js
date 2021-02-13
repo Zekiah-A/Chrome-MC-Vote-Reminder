@@ -17,7 +17,6 @@ function callback(){
 	console.log("Notification fr  vote reminder sent at:", callbackDate);
 }
 */
-//What do if no vote ->alert why havent -> image ->vote now or else
 //What to do if up to date -> funny dancing gif /DONE
 //, next vote in []
 

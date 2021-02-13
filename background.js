@@ -7,15 +7,18 @@ var notificationSettings  = {
 	iconUrl: "images/scpe_32.png"
 };
 
-function tick(){
-	var d = new Date();
-	var dateIndicator = document.getElementById('dateIndicator');
-	dateIndicator.innerHTML = d
-	console.log("Current date is:", d)
-}
-
 document.addEventListener('DOMContentLoaded', function() {
 	notification(); //maybe time var
+	//maybe in here??
+	
+	chrome.browserAction.onClicked.addListener(function(tab) { //make
+		var d = new Date();
+		var dateIndicator = document.getElementById('dateIndicator');
+		dateIndicator.innerHTML = d;
+		console.log("Current date is:", d);
+		notification(); //<-- rm
+	});
+	//end of doubt
 });
 
 function notification(){
