@@ -8,4 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		var voteURL = "https://minecraftpocket-servers.com/server/62318/";
 		chrome.tabs.create({ url: voteURL });
 	});
+	var settingsButton = document.getElementById('settings');
+	settingsButton.addEventListener('input', function(){
+		chrome.tabs.create({ url: 'options.html'});
+	});
 });
