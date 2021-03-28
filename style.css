@@ -1,0 +1,31 @@
+.container {
+  /*margin: 30px;*/
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .container:hover .shine {
+    transform: skewX(20deg) translateX(300px); }
+
+.button-shine {
+  border: 1;
+  /*padding: 30px 15px;*/
+  width: 100%;
+  /*background: steelblue;*/
+  /*color: white;*/
+  /*font-size: 2em;*/
+  /*font-weight: bold;*/
+  /*transition: background .2s linear;*/
+  /*letter-spacing: 2px;*/
+  /*border-radius: 10px;*/ }
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all .2s linear;
+  transform: skewX(20deg) translateX(0); }
+
+/*# sourceMappingURL=style.css.map */

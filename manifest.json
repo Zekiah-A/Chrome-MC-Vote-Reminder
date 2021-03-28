@@ -2,7 +2,7 @@
   "name": "ScpeVoteExtension",
   "version": "1.0",
   "description": "This bot wil remind you to vote for scpe (or force you :)).",
-  "permissions": ["activeTab", "declarativeContent", "storage", "notifications"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "notifications", "tabs"],
   "options_page": "options.html",
   
   "background": {

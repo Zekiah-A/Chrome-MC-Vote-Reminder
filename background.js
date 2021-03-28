@@ -8,19 +8,22 @@ var notificationSettings  = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-	notification(); //maybe time var
-	//maybe in here??
+	var d = new Date();
+	//var dateIndicator = document.getElementById('dateIndicator');
+	//dateIndicator.innerHTML = d;
+	//alert("Current date is:", d);
+	notification();
 	
-	chrome.browserAction.onClicked.addListener(function(tab) { //make
-		var d = new Date();
-		var dateIndicator = document.getElementById('dateIndicator');
-		dateIndicator.innerHTML = d;
-		console.log("Current date is:", d);
-		notification(); //<-- rm
+	chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+		var url = tabs[0].url; //let   //I hate this terrible coding language, i wish i could just use C#
+		//what is a "Let"
+		if (url){
+			alert("Lol");
+		}
 	});
-	//end of doubt
 });
 
-function notification(){
-	chrome.notifications.create(notificationSettings)
+function notification(Date d){
+	chrome.notifications.create(notificationSettings);
 }
+
